@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YINET Uganda - Youth Inclusion Network</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'royal-blue': '#4169E1',
+                        'royal-blue-dark': '#1E40AF',
+                        'yellow-accent': '#FFD700',
+                        'yellow-light': '#FFFACD',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        .hero-bg { background: linear-gradient(135deg, #4169E1 0%, #1E40AF 50%, #FFD700 100%); }
+        .navbar-scrolled { @apply bg-white/95 backdrop-blur-md shadow-lg; }
+    </style>
+</head>
+<body class="font-sans text-gray-900 antialiased">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 top-0 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4 md:py-3">
+                <!-- Logo -->
+                <a href="#home" class="text-2xl font-bold bg-gradient-to-r from-royal-blue to-yellow-accent bg-clip-text text-transparent">YINET Uganda</a>
+                
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="#home" class="hover:text-royal-blue font-medium transition-colors">Home</a></li>
+                    <li><a href="#about" class="hover:text-royal-blue font-medium transition-colors">About Us</a></li>
+                    <li><a href="#programs" class="hover:text-royal-blue font-medium transition-colors">Programs</a></li>
+                    <li><a href="#team" class="hover:text-royal-blue font-medium transition-colors">Our Team</a></li>
+                    <li><a href="#get-involved" class="hover:text-royal-blue font-medium transition-colors">Get Involved</a></li>
+                    <li><a href="#contact" class="hover:text-royal-blue font-medium transition-colors">Contact</a></li>
+                </ul>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                    <i class="fas fa-bars text-royal-blue text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <ul class="px-4 py-2 space-y-2">
+                <li><a href="#home" class="block py-2 hover:text-royal-blue font-medium">Home</a></li>
+                <li><a href="#about" class="block py-2 hover:text-royal-blue font-medium">About Us</a></li>
+                <li><a href="#programs" class="block py-2 hover:text-royal-blue font-medium">Programs</a></li>
+                <li><a href="#team" class="block py-2 hover:text-royal-blue font-medium">Our Team</a></li>
+                <li><a href="#get-involved" class="block py-2 hover:text-royal-blue font-medium">Get Involved</a></li>
+                <li><a href="#contact" class="block py-2 hover:text-royal-blue font-medium">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Home) -->
+    <section id="home" class="hero-bg min-h-screen flex items-center justify-center text-white text-center px-4 py-20 overflow-hidden">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-8 animate-fade-in">
+                Welcome to <span class="bg-gradient-to-r from-yellow-accent to-white bg-clip-text text-transparent">YINET Uganda</span>
+            </h1>
+            <div class="space-y-6 mb-12">
+                <!-- Vision -->
+                <blockquote class="text-xl md:text-2xl italic bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/20">
+                    <i class="fas fa-eye text-yellow-accent text-3xl mb-4 block"></i>
+                    "To provide first class youth services that supports the personal and social development of young people, enabling them to increase their resilience, learn new skills in the present, and promote their ambition for the future."
+                </blockquote>
+                <!-- Mission -->
+                <blockquote class="text-xl md:text-2xl italic bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/20">
+                    <i class="fas fa-bullseye text-yellow-accent text-3xl mb-4 block"></i>
+                    "To support all young people, especially those who needs us most to reach their full potential and make positive life choices by engaging in fun and innovative youth activities to move from dependence to interdependence."
+                </blockquote>
+            </div>
+            <!-- Profile -->
+            <div class="bg-black/20 p-8 rounded-2xl backdrop-blur-sm max-w-2xl mx-auto">
+                <h3 class="text-2xl font-semibold mb-4">Our Profile</h3>
+                <p class="text-lg">Youth Inclusion Network Uganda (YINET Uganda) is a refugee-led Community Based Organization (CBO) started in 2020 and registered on 12th May 2023 (Reg. No. ODU/07/2023) in Terego District.</p>
+            </div>
+            <a href="#contact" class="mt-12 inline-block bg-yellow-accent text-royal-blue-dark px-12 py-4 rounded-full text-xl font-bold hover:scale-105 transition-all shadow-2xl">Get Involved Today</a>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-24 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold text-royal-blue mb-6">About Us</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Empowering youth for a brighter future through compassion and innovation.</p>
+            </div>
+            
+            <!-- Background & Goal -->
+            <div class="grid md:grid-cols-2 gap-12 mb-20">
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all">
+                    <h3 class="text-2xl font-bold text-royal-blue mb-6"><i class="fas fa-history text-yellow-accent mr-3"></i>Our Background</h3>
+                    <p class="text-lg leading-relaxed">YINET Uganda is a youth-founded, refugee-led community-based organization working in partnership with women-led CBOs/CSOs, local governments, national and international NGOs, and church-based organizations. Established in Imvepi Refugee Settlement, Odupi Sub-County, Terego District, we are committed to strengthening women and girls’ capacities for improved menstrual health, SRHR, education, and youth civic engagement.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all">
+                    <h3 class="text-2xl font-bold text-royal-blue mb-6"><i class="fas fa-bullseye text-yellow-accent mr-3"></i>Our Goal</h3>
+                    <p class="text-lg leading-relaxed">To be a leading youth-led development agency championing women and girls' rights access to menstrual health, sexual reproductive health rights, and meaningful youth engagement in the civic and democratic space for sustainable development.</p>
+                </div>
+            </div>
+            
+            <!-- Core Values -->
+            <div class="mb-20">
+                <h3 class="text-3xl font-bold text-royal-blue text-center mb-12">Our Core Values</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all text-center">
+                        <i class="fas fa-heart text-royal-blue text-4xl mb-4"></i>
+                        <h4 class="font-bold text-xl mb-2">Compassion</h4>
+                        <p>We approach our work with empathy, prioritizing accessibility for all.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all text-center">
+                        <i class="fas fa-lightbulb text-yellow-accent text-4xl mb-4"></i>
+                        <h4 class="font-bold text-xl mb-2">Innovation</h4>
+                        <p>Constantly seeking creative solutions to complex challenges.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all text-center">
+                        <i class="fas fa-leaf text-green-500 text-4xl mb-4"></i>
+                        <h4 class="font-bold text-xl mb-2">Sustainability</h4>
+                        <p>Ensuring long-term impact for current and future generations.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all text-center">
+                        <i class="fas fa-hands-helping text-royal-blue text-4xl mb-4"></i>
+                        <h4 class="font-bold text-xl mb-2">Collaboration</h4>
+                        <p>Building partnerships for meaningful, sustainable change.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all text-center">
+                        <i class="fas fa-shield-alt text-black text-4xl mb-4"></i>
+                        <h4 class="font-bold text-xl mb-2">Integrity</h4>
+                        <p>Upholding honesty, transparency, and the highest standards.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all text-center">
+                        <i class="fas fa-users text-yellow-accent text-4xl mb-4"></i>
+                        <h4 class="font-bold text-xl mb-2">Inclusivity & Accessibility</h4>
+                        <p>Celebrating diversity and breaking down barriers for all.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Governance -->
+            <div class="bg-white p-12 rounded-2xl shadow-xl max-w-4xl mx-auto text-center">
+                <h3 class="text-3xl font-bold text-royal-blue mb-6"><i class="fas fa-users-cog text-yellow-accent mr-3"></i>Governance</h3>
+                <p class="text-xl text-gray-700">The organization is guided by a strong Board of Directors and Program Management Team (PMT), ensuring effective operationalization and strategic oversight.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs -->
+    <section id="programs" class="py-24 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold text-royal-blue mb-6">Our Programs</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Dedicated thematic areas addressing key challenges faced by youth, women, and girls.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Menstrual Health Management -->
+                <div class="bg-gradient-to-br from-royal-blue to-royal-blue-dark text-white p-10 rounded-2xl shadow-2xl hover:scale-105 transition-all">
+                    <i class="fas fa-tint text-yellow-accent text-5xl mb-6 block mx-auto"></i>
+                    <h3 class="text-3xl font-bold mb-6 text-center">Menstrual Health Management (MHM)</h3>
+                    <ul class="space-y-3 text-lg">
+                        <li><i class="fas fa-check text-yellow-accent mr-2"></i>Awareness and education on menstrual hygiene.</li>
+                        <li><i class="fas fa-check text-yellow-accent mr-2"></i>Training on production of local reusable sanitary pads.</li>
+                        <li><i class="fas fa-check text-yellow-accent mr-2"></i>Engagement with religious and cultural leaders.</li>
+                        <li><i class="fas fa-check text-yellow-accent mr-2"></i>Strengthening community and school structures.</li>
+                    </ul>
+                </div>
+                <!-- SRHR -->
+                <div class="bg-gradient-to-br from-yellow-accent/20 to-yellow-light text-gray-900 p-10 rounded-2xl shadow-xl hover:scale-105 transition-all border-4 border-yellow-accent/50">
+                    <i class="fas fa-heartbeat text-royal-blue text-5xl mb-6 block mx-auto"></i>
+                    <h3 class="text-3xl font-bold mb-6 text-center">Sexual Reproductive Health Rights (SRHR)</h3>
+                    <ul class="space-y-3 text-lg">
+                        <li><i class="fas fa-check text-royal-blue mr-2"></i>HIV awareness creation.</li>
+                        <li><i class="fas fa-check text-royal-blue mr-2"></i>Reproductive health education and family planning.</li>
+                        <li><i class="fas fa-check text-royal-blue mr-2"></i>Sex education for in- and out-of-school youth.</li>
+                    </ul>
+                </div>
+                <!-- Youth & Civic Engagement -->
+                <div class="bg-gradient-to-br from-royal-blue to-royal-blue-dark text-white p-10 rounded-2xl shadow-2xl hover:scale-105 transition-all">
+                    <i class="fas fa-hands text-yellow-accent text-5xl mb-6 block mx-auto"></i>
+                    <h3 class="text-3xl font-bold mb-6 text-center">Youth & Civic Engagement</h3>
+                    <ul class="space-y-3 text-lg">
+                        <li><i class="fas fa-check text-yellow-accent mr-2"></i>Mentorship on leadership, governance, and innovation.</li>
+                        <li><i class="fas fa-check text-yellow-accent mr-2"></i>Youth empowerment for sustainable livelihoods.</li>
+                        <li><i class="fas fa-check text-yellow-accent mr-2"></i>Training on computer skills and knowledge.</li>
+                    </ul>
+                </div>
+                <!-- Education -->
+                <div class="bg-gradient-to-br from-yellow-accent/20 to-yellow-light text-gray-900 p-10 rounded-2xl shadow-xl hover:scale-105 transition-all border-4 border-yellow-accent/50">
+                    <i class="fas fa-graduation-cap text-royal-blue text-5xl mb-6 block mx-auto"></i>
+                    <h3 class="text-3xl font-bold mb-6 text-center">Education</h3>
+                    <ul class="space-y-3 text-lg">
+                        <li><i class="fas fa-check text-royal-blue mr-2"></i>Play-based early childhood development.</li>
+                        <li><i class="fas fa-check text-royal-blue mr-2"></i>Child-friendly learning spaces.</li>
+                        <li><i class="fas fa-check text-royal-blue mr-2"></i>Sessions for children and parents.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team -->
+    <section id="team" class="py-24 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold text-royal-blue mb-6">Our Leadership Team</h2>
+                <p class="text-xl text-gray-600">Dedicated professionals driving positive change.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all text-center">
+                    <div class="w-24 h-24 bg-royal-blue rounded-full mx-auto mb-6 flex items-center justify-center text-white text-2xl font-bold">KE</div>
+                    <h3 class="text-2xl font-bold text-royal-blue mb-2">Kenyi Emmanuel</h3>
+                    <p class="text-yellow-accent font-semibold mb-4">Executive Director</p>
+                    <p class="text-gray-600 mb-4">+256 779 601403</p>
+                    <a href="mailto:emmanuelkenyi42@gmail.com" class="text-royal-blue hover:underline">emmanuelkenyi42@gmail.com</a>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all text-center">
+                    <div class="w-24 h-24 bg-yellow-accent rounded-full mx-auto mb-6 flex items-center justify-center text-royal-blue-dark text-2xl font-bold">WR</div>
+                    <h3 class="text-2xl font-bold text-royal-blue mb-2">Wani Fabian Richard</h3>
+                    <p class="text-yellow-accent font-semibold mb-4">Programs Manager</p>
+                    <p class="text-gray-600 mb-4">+256 772 505828</p>
+                    <a href="mailto:richardfabian88@gmail.com" class="text-royal-blue hover:underline">richardfabian88@gmail.com</a>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all text-center">
+                    <div class="w-24 h-24 bg-royal-blue rounded-full mx-auto mb-6 flex items-center justify-center text-white text-2xl font-bold">OR</div>
+                    <h3 class="text-2xl font-bold text-royal-blue mb-2">Olanya Ronald</h3>
+                    <p class="text-yellow-accent font-semibold mb-4">Human Resource Manager</p>
+                    <p class="text-gray-600">+256 775 246345</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all text-center">
+                    <div class="w-24 h-24 bg-yellow-accent rounded-full mx-auto mb-6 flex items-center justify-center text-royal-blue-dark text-2xl font-bold">IB</div>
+                    <h3 class="text-2xl font-bold text-royal-blue mb-2">Inna Betty</h3>
+                    <p class="text-yellow-accent font-semibold mb-4">Finance Officer</p>
+                    <p class="text-gray-600">+256 780 882893</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all text-center">
+                    <div class="w-24 h-24 bg-royal-blue rounded-full mx-auto mb-6 flex items-center justify-center text-white text-2xl font-bold">RB</div>
+                    <h3 class="text-2xl font-bold text-royal-blue mb-2">Rufas Bita Elias</h3>
+                    <p class="text-yellow-accent font-semibold mb-4">Procurement & Logistics Officer</p>
+                    <p class="text-gray-600">+256 763 011505</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all text-center">
+                    <div class="w-24 h-24 bg-yellow-accent rounded-full mx-auto mb-6 flex items-center justify-center text-royal-blue-dark text-2xl font-bold">TG</div>
+                    <h3 class="text-2xl font-bold text-royal-blue mb-2">Tabu Grace</h3>
+                    <p class="text-yellow-accent font-semibold mb-4">Monitoring & Evaluation Officer</p>
+                    <p class="text-gray-600">+256 781 125859</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Involved -->
+    <section id="get-involved" class="py-24 px-4 bg-gradient-to-br from-royal-blue to-royal-blue-dark text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Get Involved</h2>
+                <p class="text-xl text-yellow-light/90 max-w-3xl mx-auto mb-12">Your support makes a difference. Join us in empowering youth and communities.</p>
+            </div>
+            
+            <!-- Funding & Membership -->
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div class="bg-white/10 backdrop-blur-sm p-10 rounded-2xl border border-white/20">
+                    <i class="fas fa-donate text-yellow-accent text-5xl mb-6 block mx-auto"></i>
+                    <h3 class="text-3xl font-bold mb-6 text-center">Support Our Funding</h3>
+                    <ul class="space-y-4 text-lg">
+                        <li><i class="fas fa-check text-yellow-accent mr-3"></i>Membership fees</li>
+                        <li><i class="fas fa-check text-yellow-accent mr-3"></i>Monthly subscriptions by members</li>
+                        <li><i class="fas fa-check text-yellow-accent mr-3"></i>Individual contributions (cash or kind)</li>
+                    </ul>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-10 rounded-2xl border border-white/20">
+                    <i class="fas fa-handshake text-yellow-accent text-5xl mb-6 block mx-auto"></i>
+                    <h3 class="text-3xl font-bold mb-6 text-center">Our Partners</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-white/20 p-6 rounded-xl text-center font-bold">Every Shelter</div>
+                        <div class="bg-white/20 p-6 rounded-xl text-center font-bold">BRAC</div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#contact" class="inline-block bg-yellow-accent text-royal-blue-dark px-12 py-4 rounded-full text-xl font-bold hover:scale-105 transition-all shadow-2xl">Become a Member or Donate</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold text-royal-blue mb-6">Contact Us</h2>
+                <p class="text-xl text-gray-600">Reach out to us. We're here to connect and collaborate.</p>
+            </div>
+            
+            <!-- Location & Contacts -->
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold text-royal-blue mb-6"><i class="fas fa-map-marker-alt text-yellow-accent mr-3"></i>Our Location</h3>
+                    <p class="text-lg mb-8">Imvepi Refugee Settlement, Odupi Sub-County, Terego District, West Nile Region, Uganda.</p>
+                    <h4 class="text-xl font-semibold mb-4">Primary Contacts:</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-user text-royal-blue text-2xl mr-4"></i>
+                            <div>
+                                <p class="font-semibold">Kenyi Emmanuel</p>
+                                <p>+256 779 601403</p>
+                                <a href="mailto:yinetuganda@gmail.com" class="text-royal-blue hover:underline">yinetuganda@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-user text-royal-blue text-2xl mr-4"></i>
+                            <div>
+                                <p class="font-semibold">Wani Fabian Richard</p>
+                                <p>+256 772 505828</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <form id="contact-form" class="bg-white p-10 rounded-2xl shadow-xl" action="https://formspree.io/f/YOUR_FORMSPREE_HASH" method="POST"> <!-- Replace YOUR_FORMSPREE_HASH with your free Formspree hash -->
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <input type="text" name="name" placeholder="Your Name" required class="p-4 border border-gray-300 rounded-xl focus:ring-4 focus:ring-royal-blue focus:border-transparent outline-none transition-all" />
+                        <input type="email" name="email" placeholder="Your Email" required class="p-4 border border-gray-300 rounded-xl focus:ring-4 focus:ring-royal-blue focus:border-transparent outline-none transition-all" />
+                    </div>
+                    <input type="text" name="subject" placeholder="Subject" required class="w-full p-4 border border-gray-300 rounded-xl mb-6 focus:ring-4 focus:ring-royal-blue focus:border-transparent outline-none transition-all" />
+                    <textarea name="message" rows="5" placeholder="Your Message" required class="w-full p-4 border border-gray-300 rounded-xl focus:ring-4 focus:ring-royal-blue focus:border-transparent outline-none transition-all mb-6"></textarea>
+                    <button type="submit" class="w-full bg-gradient-to-r from-royal-blue to-royal-blue-dark text-white py-4 px-8 rounded-xl font-bold text-lg hover:scale-105 transition-all shadow-xl hover:shadow-2xl">
+                        <i class="fas fa-paper-plane mr-2"></i>Send Message
+                    </button>
+                </form>
+            </div>
+            <p class="text-center text-gray-500 text-sm">
+                <i>Form powered by Formspree (free signup at formspree.io). Emails sent to yinetuganda@gmail.com.</i>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="mb-8">
+                <a href="#home" class="text-3xl font-bold bg-gradient-to-r from-yellow-accent to-white bg-clip-text text-transparent">YINET Uganda</a>
+            </div>
+            <p>&copy; 2025 Youth Inclusion Network Uganda. Reg. No. ODU/07/2023. All rights reserved.</p>
+            <div class="mt-6 space-y-2 text-sm">
+                <p>Imvepi Refugee Settlement, Terego District, Uganda</p>
+                <p><a href="mailto:yinetuganda@gmail.com" class="hover:text-yellow-accent transition-colors">yinetuganda@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('navbar-scrolled');
+                navbar.classList.remove('bg-white/80');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+                navbar.classList.add('bg-white/80');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+                // Close mobile menu
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Form submission feedback (for demo/Formspree)
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            // Formspree handles submission
+            const btn = this.querySelector('button[type="submit"]');
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Sending...';
+            btn.disabled = true;
+        });
+
+        // Fade in animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+        document.querySelectorAll('blockquote, .shadow-xl').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
